@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>demo</title>
+	
+	<style>
+		div{ float:left; position:relative; width:400px; height:300px; margin:20px; overflow:hidden; border:1px #ddd solid; }
+		.bgi{
+			background: center no-repeat;
+		}
+	</style>
+	
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/jquery.LoadImage.js"></script>
+	
+	<body>
+			<div><img src="image/null.gif" data-url="http://img1.efu.com.cn/upfile/news/commonly/2010/2010-09-29/09a75768-25db-4f63-bb0f-97cfc1b4c957.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://c.hiphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=337bd6f9b80e7bec27da07e71f1e8249/42a98226cffc1e1780f84ec74a90f603728de985.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://imgsrc.baidu.com/forum/pic/item/e74ecf1b776590caae513321.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://www.zgnt.net/img/attachement/jpg/site3/20110701/90fba6156bf10f780a8448.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://imgsrc.baidu.com/forum/pic/item/743a023b5bb5c9ea642990b3d539b6003bf3b32d.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://att.hftogo.com/portal/201106/24/164232wntdtrhdhnhwijwg.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://img1.gtimg.com/ent/pics/hv1/20/177/531/34573430.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://imgsrc.baidu.com/forum/pic/item/7a523b876aa8916fc75cc3bb.jpg" /></div>
+			<div><img src="image/null.gif" data-url="http://xuanke114.com/manage/uploads/1308824853.jpg" /></div>
+			<div><img src="image/null.gif" data-url="image/image.jpg" /></div>
+			<div><img src="image/null.gif" data-url="image/NoPic.jpg" /></div>
+			<div class="bgi" style="background-image: url(image/null.gif);" data-url="image/NoPic.jpg"></div>
+			<div class="bgi" style="background-image: url(image/null.gif);" data-url="http://img1.efu.com.cn/upfile/news/commonly/2010/2010-09-29/09a75768-25db-4f63-bb0f-97cfc1b4c957.jpg"></div>
+			<script type="text/javascript">
+				$(function() {
+					$("div img").LoadImage(true, true, 400, 300);
+					//$("div img").LoadImage(true, true, 400, 300, "image/null.gif");//自定义暂无图片
+					$(".bgi").LoadImage();
+					//$(".bgi").LoadImage("image/loading.gif");//自定义暂无图片
+				});
+			</script>
+	</body>
+</html>
